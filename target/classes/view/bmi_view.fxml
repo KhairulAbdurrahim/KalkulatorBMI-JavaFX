@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="350.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BmiController">
+   <children>
+      <Pane layoutX="16.0" layoutY="22.0" prefHeight="501.0" prefWidth="318.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="lblKategori" layoutX="14.0" layoutY="381.0" prefHeight="17.0" prefWidth="290.0" />
+            <Label fx:id="lblHasil" layoutX="14.0" layoutY="351.0" prefHeight="17.0" prefWidth="290.0" />
+         </children></Pane>
+      <Label layoutX="111.0" layoutY="53.0" text="Kalkulator BMI" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="155.0" text="Masukkan Berat Badan Anda (kg) :" />
+      <TextField fx:id="txtBerat" layoutX="30.0" layoutY="180.0" prefHeight="26.0" prefWidth="289.0" />
+      <Label layoutX="31.0" layoutY="221.0" text="Masukkan Tinggi Badan Anda (cm) :" />
+      <TextField fx:id="txtTinggi" layoutX="30.0" layoutY="247.0" prefHeight="26.0" prefWidth="289.0" />
+      <Button fx:id="btnHitung" layoutX="31.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleHitungButton" prefHeight="26.0" prefWidth="290.0" style="-fx-background-color: #007bff; -fx-font-weight: bold;" text="Hitung" textFill="WHITE" />
+   </children>
+</AnchorPane>
