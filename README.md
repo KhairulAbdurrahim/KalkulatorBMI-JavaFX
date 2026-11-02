@@ -35,10 +35,10 @@ Berikut adalah beberapa pratinjau tampilan dari aplikasi Kalkulator BMI:
 ---
 
 ## Teknologi & Tools
-* **Java:** JDK 25 (Default)[cite: 7]
-* **JavaFX:** Versi 21.0.9[cite: 7]
-* **Build Tool:** Maven[cite: 7]
-* **IDE:** NetBeans IDE[cite: 7]
+* **Java:** JDK 25 (Default)
+* **JavaFX:** Versi 21.0.9
+* **Build Tool:** Maven
+* **IDE:** NetBeans IDE
 * **Git & GitHub**
 
 ---
