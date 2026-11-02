@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import model.BmiModel; // Memanggil model yang sudah kita buat sebelumnya
+import model.BmiModel;
 
 public class BmiController {
 
@@ -23,22 +23,20 @@ public class BmiController {
     @FXML
     private Label lblKategori;
 
-    // Method ini akan dipanggil otomatis saat tombol Hitung diklik
     @FXML
     private void handleHitungButton() {
         try {
             double berat = Double.parseDouble(txtBerat.getText());
             double tinggi = Double.parseDouble(txtTinggi.getText());
 
-            // Validasi: Pastikan berat dan tinggi harus lebih besar dari 0
             if (berat <= 0 || tinggi <= 0) {
                 lblHasil.setText("Error: Angka harus lebih dari 0!");
                 lblKategori.setText("");
-                return; // Hentikan proses jika tidak valid
+                return;
             }
 
             BmiModel model = new BmiModel(berat, tinggi);
-            double bmi = model.hitung(); // Sesuaikan dengan nama method hitung di modelmu
+            double bmi = model.hitung();
             String kategori = model.kategori(bmi);
 
             lblHasil.setText(String.format("BMI: %.2f", bmi));

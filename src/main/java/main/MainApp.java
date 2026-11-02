@@ -10,8 +10,6 @@ public class MainApp extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        // Mengarahkan ke file FXML View yang ada di folder view
-        // Sesuaikan nama filenya jika punya kamu berbeda (misal: /view/bmi_view.fxml)
         Parent root = FXMLLoader.load(getClass().getResource("/view/bmi_view.fxml"));
         
         primaryStage.setTitle("Kalkulator BMI");
